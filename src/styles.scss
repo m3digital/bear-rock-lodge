@@ -9,6 +9,7 @@ $main-color: #77B3D9;
 $black-color: #3c3c3c;
 $white-color: #ffffff;
 $paragraph-color: #3c3c3c;
+$link-color: #8c89a1;
 $font-size: 16px;
 $transition: .5s;
 
@@ -633,12 +634,12 @@ Features CSS
         width: 80px;
         height: 80px;
         line-height: 80px;
-        color: $main-color;
+        color: #000000;
         font-size: 30px;
         border-radius: 50%;
         transition: $transition;
         display: inline-block;
-        border: 1.3px solid $main-color;
+        border: 1.3px solid #000000
     }
     h3 {
         text-transform: uppercase;
@@ -652,9 +653,10 @@ Features CSS
         };
     }
     a {
-        color: $main-color;
+        color: $link-color;
         font-size: 15px;
         display: inline-block;
+        text-decoration: underline !important;
 
         &:hover, &:focus {
             letter-spacing: 1px;
@@ -668,7 +670,7 @@ Features CSS
         border-color: #ebebeb;
 
         .icon {
-            background-color: $main-color;
+            background-color: #000000;
             color: $white-color;
         }
     }
@@ -781,7 +783,7 @@ Property Details CSS
     position: relative;
     z-index: 1;
     background: {
-        image: url(assets/img/video-bg.jpg);
+        image: url(assets/img/video-bg.png);
         position: center center;
         size: cover;
         repeat: no-repeat;
